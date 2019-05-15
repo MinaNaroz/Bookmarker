@@ -33,7 +33,7 @@ function deleteUrl(index) {
 function displayUrl() {
   var temp = "";
   for (var i = 0; i < urls.length; i++) {
-    temp += '<tr><td><h1>' + urls[i].sname + '</h1></td><td><a class = "btn btn-info" href="' + urls[i].surl + '">Visit</a></td><td><a onclick="deleteUrl(' + i + ')" class="btn btn-danger">Delete</a></td></tr>';
+    temp += '<tr><td><h1>' + urls[i].sname + '</h1></td><td><a class = "btn btn-outline-primary p-2" href="' + urls[i].surl + '"><i class="fas fa-thumbs-up"></i></a></td><td><a onclick="deleteUrl(' + i + ')" class="btn btn-outline-danger p-2"><i class="far fa-trash-alt"></i></a></td></tr>';
   }
   document.getElementById("bookTable").innerHTML = temp;
 }
